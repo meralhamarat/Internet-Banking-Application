@@ -139,3 +139,34 @@ function guncelleBakiye() {
     bakiyeElem.textContent = `${bakiye.toLocaleString()} ₺`;
   }
 }
+let slideIndex = 0;
+showSlide(slideIndex);
+
+function currentSlide(n) {
+  showSlide((slideIndex = n));
+}
+
+function showSlide(n) {
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n >= slides.length) {
+    slideIndex = 0;
+  }
+  if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+  slides[slideIndex].classList.add("active");
+  dots[slideIndex].classList.add("active");
+}
+
+// Otomatik geçiş (isteğe bağlı)
+setInterval(function () {
+  slideIndex++;
+  showSlide(slideIndex);
+}, 5000); // 5 saniyede bir geçiş
