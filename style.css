@@ -133,3 +133,41 @@ body {
   font-size: 32px;
   font-weight: bold;
 }
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
