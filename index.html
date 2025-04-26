@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>İnternet Bankacılığı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">📶</div>
+      <nav class="menu">
+        <a href="#">Hesaplar</a>
+        <a href="#">Para Transferi</a>
+        <a href="#">Ödemeler</a>
+        <a href="#">Kartlar</a>
+        <a href="#">Çıkış</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="left-section">
+        <h1>Hesaplarınızı<br />Kolayca Yönetin</h1>
+        <button onclick="hesapGoruntule()">Hesaplarınızı Görüntüleyin</button>
+
+        <div class="actions">
+          <div class="action-item">
+            <div class="icon">🧾</div>
+            <span>Hesap Bakiyesi</span>
+          </div>
+          <div class="action-item">
+            <div class="icon">⬆️</div>
+            <span>Para Transferi</span>
+          </div>
+          <div class="action-item">
+            <div class="icon">📝</div>
+            <span>Ödeme Yapın</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="card">
+          <div class="chip"></div>
+          <div class="card-number">1234 5678 9012 3456</div>
+          <div class="card-details">
+            <span>12/25</span>
+            <span>CARDHOLDER</span>
+          </div>
+        </div>
+
+        <div class="balance-box">
+          <div class="balance-title">Bakiye</div>
+          <div class="balance-amount">25.400 ₺</div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
